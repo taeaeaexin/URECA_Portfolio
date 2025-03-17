@@ -1,9 +1,11 @@
+/* 메인 */
 body {
     background-color: #008081;
     margin: 0;
     font-family: "MS Sans Serif", sans-serif;
 }
 
+/* 바탕화면 */
 .desktop {
     display: flex;
     flex-direction: column;
@@ -12,25 +14,31 @@ body {
 }
 
 .icon {
-    width: 80px;
-    text-align: center;
+    width: 100px;
     cursor: pointer;
     margin-bottom: 15px;
+    align-items: center;
 }
 
 .icon img {
-    width: 48px;
-    height: 48px;
+    width: 100px;
+    height: 100px;
     display: block;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 
 .icon p {
-    margin: 5px 0 0;
-    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    margin-top : -18px;
+    margin-bottom: 20px;
+    font-size: 20px;
     color: white;
+    text-align: center;
 }
 
+/* 작업표시줄 */
 .taskbar {
     position: fixed;
     bottom: 0;
@@ -40,24 +48,42 @@ body {
     border-top: 2px solid #ffffff;
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    padding-left: 2px;
     justify-content: space-between;
     box-sizing: border-box;
 }
 
 .start-button {
     background: #c0c0c0;
-    border: 2px solid #808080;
-    padding: 5px 15px;
+    padding: 3px;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: inset -2px -2px rgb(77, 77, 77), inset 2px 2px rgb(177, 177, 177);
 }
 
-.taskbar-time {
-    font-size: 14px;
-    margin-right: 10px;
+.start-button p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
 }
 
+.time {
+    background: #c0c0c0;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: inset 2px 2px rgb(77, 77, 77);
+    margin-right: 3px;
+}
+
+.time p {
+    display: inline-block;
+    margin: 7px;
+    padding: 0;
+    font-size: 20px;
+}
+
+/* 창 */
 .window {
     width: 500px;
     background-color: #C0C0C0;
@@ -66,16 +92,22 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     padding : 3px;
+    padding-bottom: 20px;
     box-shadow : inset 2px 2px rgb(200, 200, 200), inset -2px -2px rgb(88, 88, 88);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title-bar {
-    background-color: #000080;
+    background-color: #00006b;
     color: white;
     padding: 5px;
     display: flex;
     font-weight: bold;
     justify-content: space-between;
+    width : 98%;
 }
 
 .title-bar button {
@@ -85,4 +117,25 @@ body {
     cursor: pointer;
     box-shadow: inset -2px -2px gray;
     font-weight: bold;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.content {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 25px;
+    padding : 5px;
+    box-shadow : inset 2px 2px rgb(88, 88, 88), inset -2px -2px rgb(200, 200, 200);
+}
+
+.content img {
+    display: inline-block;
+    width: 150px;
+    height : auto;
 }

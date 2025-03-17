@@ -4,35 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mindows 95 - 내 정보</title>
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+    <!-- 아이콘 -->
     <div class="desktop">
-        <div class="icon" style="top: 50px; left: 20px;" onclick="location.href='about.html'">
-            <img src="../img/cat.jpg" alt="내 정보">
+        <div class="icon" onclick="location.href='about.html'">
+            <img src="../img/computer.png">
             <p>내 정보</p>
         </div>
-        <div class="icon" style="top: 180px; left: 20px;" onclick="location.href='gallery.html'">
-            <img src="../img/cat.jpg" alt="갤러리">
+        
+        <div class="icon" onclick="location.href='gallery.html'">
+            <img src="../img/note.png">
             <p>갤러리</p>
         </div>
     </div>
-
-    <div class="window">
-        <div class="title-bar">
-            <span>내 정보</span>
-            <button onclick="location.href='main.html'">X</button>
+    
+    <!-- 작업 표시줄 -->
+    <div class="taskbar">
+        <div class="start-button">
+            <img src="../img/windows95.png" style = "width: 20px;">
+            <p>시작</p>
         </div>
-        <div class="content">
-            <img src="../img/cat.jpg" alt="내 사진">
-            <p style="padding-left: 20px; padding-right: 20px;">안녕하세요 어쩌구</p>
+        
+        <div class="time">
+            <p>17:50</p>
         </div>
     </div>
 
-    <div class="taskbar">
-        <div class="start-button">시작</div>
-        <div class="taskbar-icons"></div>
-        <div class="time">17:50</div>
+    <!-- 창 -->
+    <div class="window">
+        <div class="title-bar">
+            내 정보
+            <button onclick="location.href='main.html'">✖</button>
+        </div>
+        <div class="content">
+            <img src="../img/me.jpg" alt="내 사진">
+        </div>
+        <p>
+            이름 : 문태신<br>
+            생년월일 : 1999.01.07<br>
+            <hr>
+            안녕하세요 문태신입니다.<br>
+            3대500 개발자가 꿈입니다.
+        </p>
     </div>
 </body>
 </html>

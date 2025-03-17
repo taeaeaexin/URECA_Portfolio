@@ -9,34 +9,45 @@
         .gallery img { width: 100px; margin: 5px; }
     </style>
 </head>
-<div class="desktop">
-    <div class="icon" style="top: 50px; left: 20px;" onclick="location.href='about.html'">
-        <img src="../img/cat.jpg" alt="내 정보">
-        <p>내 정보</p>
-    </div>
-    <div class="icon" style="top: 180px; left: 20px;" onclick="location.href='gallery.html'">
-        <img src="../img/cat.jpg" alt="갤러리">
-        <p>갤러리</p>
-    </div>
-</div>
-
-<div class="taskbar">
-    <div class="start-button">시작</div>
-    <div class="taskbar-icons"></div>
-    <div class="time">17:50</div>
-</div>
-
 <body>
+    <!-- 아이콘 -->
+    <div class="desktop">
+        <div class="icon" onclick="location.href='about.html'">
+            <img src="../img/computer.png">
+            <p>내 정보</p>
+        </div>
+        
+        <div class="icon" onclick="location.href='gallery.html'">
+            <img src="../img/note.png">
+            <p>갤러리</p>
+        </div>
+    </div>
+    
+    <!-- 작업 표시줄 -->
+    <div class="taskbar">
+        <div class="start-button">
+            <img src="../img/windows95.png" style = "width: 20px;">
+            <p>시작</p>
+        </div>
+        
+        <div class="time">
+            <p>17:50</p>
+        </div>
+    </div>
+
+    <!-- 창 -->
     <div class="window">
         <div class="title-bar">
             <span>갤러리</span>
-            <button onclick="location.href='main.html'">X</button>
+            <button onclick="location.href='main.html'">✖</button>
         </div>
-        <div class="content gallery">
-            <img src="../img/cat.jpg" alt="취미1">
-            <img src="../img/cat.jpg" alt="취미2">
-            <img src="../img/cat.jpg" alt="작업1">
-            <img src="../img/cat.jpg" alt="작업2">
+        <div class="content-container">
+            <div class="content">
+                <img src="../img/cat.jpg" alt="사진" style="width:200px">
+            </div>
+            <div class="content">
+                <img src="../img/cat2.jpg" alt="사진" style="width:200px">
+            </div>
         </div>
     </div>
 </body>

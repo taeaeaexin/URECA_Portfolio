@@ -1,0 +1,93 @@
+body {
+    background-color: #008081;
+    margin: 0;
+    font-family: "MS Sans Serif", sans-serif;
+}
+
+.window {
+    width: 500px;
+    background-color: #C0C0C0;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding : 3px;
+    box-shadow : inset 2px 2px rgb(200, 200, 200), inset -2px -2px rgb(88, 88, 88);
+}
+
+.title-bar {
+    background-color: #000080;
+    color: white;
+    padding: 5px;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.title-bar button {
+    background-color: #C0C0C0;
+    border: none;
+    color: black;
+    cursor: pointer;
+    box-shadow: inset -2px -2px gray;
+    font-weight: bold;
+}
+
+.content img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #c0c0c0;
+    border-top: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.start-button {
+    background: #c0c0c0;
+    border: 2px solid #808080;
+    padding: 5px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.taskbar-time {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.icon {
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.icon img {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
+
+.icon p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: white;
+}
